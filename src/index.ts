@@ -70,7 +70,7 @@ export const asUUID = (value: unknown): UUID|null => asUUIDv4(value)
 export const expectUUIDv4 = (value: unknown): UUIDv4 => {
   const result = asUUIDv4(value);
   if (!result) {
-    throw new Error(`Expected a version 4 UUID, got ${typeof result}`);
+    throw new Error(`Expected a version 4 UUID, got ${typeof value}`);
   }
   return result;
 };
@@ -78,7 +78,7 @@ export const expectUUIDv4 = (value: unknown): UUIDv4 => {
 export const expectUUIDv5 = (value: unknown): UUIDv5 => {
   const result = asUUIDv5(value);
   if (!result) {
-    throw new Error(`Expected a version 5 UUID, got ${typeof result}`);
+    throw new Error(`Expected a version 5 UUID, got ${typeof value}`);
   }
   return result;
 };
@@ -87,7 +87,7 @@ export const expectUUIDv5 = (value: unknown): UUIDv5 => {
 export const expectUUID = (value: unknown): UUID => {
   const result = asUUID(value);
   if (!result) {
-    throw new Error('Expected an UUID');
+    throw new Error(`Expected a UUID, got ${typeof value}`);
   }
   return result;
 };
