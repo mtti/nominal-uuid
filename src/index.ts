@@ -92,4 +92,4 @@ export const expectUUID = (value: unknown): UUID => {
   return result;
 };
 
-export const v4 = (): UUIDv4 => uuid.v4() as UUIDv4;
+export const uuid4 = (): UUIDv4 => uuid.v4() as UUIDv4;

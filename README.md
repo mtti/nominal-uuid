@@ -18,7 +18,7 @@ Same as `UUID` but for a specific UUID version.
 
 ## Functions
 
-### v4
+### uuid4
 
 Generate a version 4 UUID.
 
