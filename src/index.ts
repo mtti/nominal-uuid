@@ -1,4 +1,4 @@
-import uuid from 'uuid';
+import { v4 as uuidv4 } from 'uuid';
 
 const v4brand: unique symbol = Symbol('UUID v4');
 
@@ -70,7 +70,7 @@ export const asUUID = (value: unknown): UUID|null => asUUIDv4(value)
 export const expectUUIDv4 = (value: unknown): UUIDv4 => {
   const result = asUUIDv4(value);
   if (!result) {
-    throw new Error('Expected a version 4 UUID');
+    throw new Error(`Expected a version 4 UUID, got ${typeof result}`);
   }
   return result;
 };
@@ -78,7 +78,7 @@ export const expectUUIDv4 = (value: unknown): UUIDv4 => {
 export const expectUUIDv5 = (value: unknown): UUIDv5 => {
   const result = asUUIDv5(value);
   if (!result) {
-    throw new Error('Expected a version 5 UUID');
+    throw new Error(`Expected a version 5 UUID, got ${typeof result}`);
   }
   return result;
 };
@@ -92,4 +92,4 @@ export const expectUUID = (value: unknown): UUID => {
   return result;
 };
 
-export const uuid4 = (): UUIDv4 => uuid.v4() as UUIDv4;
+export const uuid4 = (): UUIDv4 => uuidv4() as UUIDv4;

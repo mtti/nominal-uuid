@@ -4,6 +4,7 @@ import {
   expectUUIDv4,
   isUUIDv4,
   UUID,
+  uuid4,
   UUIDv4,
 } from '.';
 
@@ -146,5 +147,17 @@ describe('expectUUID', () => {
     it('throws', () => {
       expect(error).toBeTruthy();
     });
+  });
+});
+
+describe('uuid4()', () => {
+  let result: UUIDv4;
+
+  beforeEach(() => {
+    result = uuid4();
+  });
+
+  it('generates a valid version 4 UUID', () => {
+    expect(expectUUIDv4(result)).toBeTruthy();
   });
 });
