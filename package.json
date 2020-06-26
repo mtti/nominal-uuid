@@ -42,6 +42,6 @@
     "typescript": "3.9.5"
   },
   "dependencies": {
-    "uuid": "^8.1.0"
+    "uuid": "^8.2.0"
   }
 }
