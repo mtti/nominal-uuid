@@ -1,4 +1,4 @@
-[![Written in TypeScript](https://flat.badgen.net/badge/icon/typescript?icon=typescript&label)](http://www.typescriptlang.org/) [![npm](https://flat.badgen.net/npm/v/@mtti/typescript-base?icon=npm)](https://www.npmjs.com/package/@mtti/uuid-ts) [![License](https://flat.badgen.net/github/license/mtti/uuid-ts)](https://github.com/mtti/uuid-ts/blob/master/LICENSE)
+[![Written in TypeScript](https://flat.badgen.net/badge/icon/TypeScript?icon=typescript&label)](http://www.typescriptlang.org/) [![npm](https://flat.badgen.net/npm/v/@mtti/typescript-base?icon=npm&label)](https://www.npmjs.com/package/@mtti/nominal-uuid) [![License](https://flat.badgen.net/github/license/mtti/nominal-uuid)](https://github.com/mtti/nominal-uuid/blob/master/LICENSE)
 
 Nominal UUID types for Typescript.
 
