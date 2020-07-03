@@ -1,6 +1,6 @@
 {
   "name": "@mtti/nominal-uuid",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Nominal UUID types for Typescript",
   "repository": "github:mtti/nominal-uuid",
   "author": "Matti Hiltunen",
