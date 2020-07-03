@@ -24,6 +24,11 @@
     "tsc": "tsc",
     "watch": "chokidar --initial -c \"npm run build\" \"src/**/*.ts\""
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
   "files": [
     "lib",
     "!lib/**/*.test.*"
@@ -37,6 +42,7 @@
     "chokidar-cli": "2.1.0",
     "eslint": "7.4.0",
     "eslint-plugin-import": "2.22.0",
+    "husky": "4.2.5",
     "jest": "26.1.0",
     "ts-jest": "26.1.1",
     "typescript": "3.9.6"
