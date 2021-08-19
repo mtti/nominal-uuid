@@ -1,4 +1,4 @@
-FROM node:16.6.2-stretch
+FROM node:16.7.0-stretch
 
 ENV RUN_DIR /app
 WORKDIR $RUN_DIR
