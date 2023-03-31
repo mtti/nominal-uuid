@@ -35,7 +35,7 @@
   "devDependencies": {
     "@mtti/eslint-config-typescript": "4.0.1",
     "@types/jest": "27.5.2",
-    "@types/uuid": "8.3.4",
+    "@types/uuid": "9.0.1",
     "@typescript-eslint/eslint-plugin": "4.33.0",
     "@typescript-eslint/parser": "4.33.0",
     "chokidar-cli": "3.0.0",
@@ -47,6 +47,6 @@
     "typescript": "5.0.3"
   },
   "dependencies": {
-    "uuid": "^8.3.2"
+    "uuid": "^9.0.0"
   }
 }
